@@ -160,3 +160,10 @@
     if (e.key === 'Escape') close(); else if (e.key === 'ArrowLeft') show(idx - 1); else if (e.key === 'ArrowRight') show(idx + 1);
   });
 })();
+
+/* ---- Banner drawings: respect reduced motion for SVG animateMotion ---- */
+(function () {
+  if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    [].forEach.call(document.querySelectorAll('.ph-art,.hero-art'), function (s) { if (s.pauseAnimations) s.pauseAnimations(); });
+  }
+})();
