@@ -739,3 +739,14 @@ footer address{font-style:normal;font-size:14.5px;line-height:1.7;color:rgba(255
   .pagehero .ph-art{width:min(88vw,460px);right:4vw}
   .pagehero-in{padding-bottom:calc(min(88vw,460px)*.43 + 24px)}
 }
+
+/* WhatsApp contact card */
+.wa-card{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid #BFE8CD;border-radius:16px;padding:12px 16px 12px 12px;text-decoration:none;color:var(--ink);box-shadow:0 1px 2px rgba(18,140,74,.08);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.wa-card:hover{transform:translateY(-2px);border-color:#25D366;box-shadow:0 8px 20px rgba(18,140,74,.18)}
+.wa-card .wa-ic{flex:0 0 46px;width:46px;height:46px;border-radius:12px;background:#25D366;display:grid;place-content:center}
+.wa-card .wa-ic svg{width:26px;height:26px;fill:#fff}
+.wa-card .wa-txt{display:flex;flex-direction:column;flex:1;line-height:1.25}
+.wa-card .wa-txt small{font-size:12.5px;font-weight:600;letter-spacing:.04em;color:#128C4A}
+.wa-card .wa-txt strong{font-size:21px;font-weight:700;letter-spacing:.01em}
+.wa-card .wa-go{width:18px;height:18px;stroke:#128C4A;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s ease}
+.wa-card:hover .wa-go{transform:translateX(4px)}
