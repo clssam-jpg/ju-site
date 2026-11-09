@@ -79,7 +79,7 @@ A floating WhatsApp button appears on every page (bottom-right), plus links in t
 top bar, on each branch in the locator, and on the contact page.
 
 **Replace the placeholder number before going live.** It currently points at
-`60138801983`. Search and replace that string across `assets/js`, the HTML files,
+`60127729331`. Search and replace that string across `assets/js`, the HTML files,
 or — if rebuilding — change `WA_NUMBER` in `locator.py`. Use the international
 format with no `+` or spaces (e.g. Malaysian `012-345 6789` becomes `60123456789`).
 Note that WhatsApp needs a mobile number; the 088 landlines won't work.
